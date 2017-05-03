@@ -82,7 +82,7 @@
     SongPlayer.next = function() {
         var currentSongIndex = getSongIndex(SongPlayer.currentSong);
         currentSongIndex++;
-        if (currentSongIndex < 0) {
+        if (currentSongIndex > currentAlbum.songs.length ) {
             currentBuzzObject.stop();
             SongPlayer.currentSong.playing = null;
         } else {
