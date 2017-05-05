@@ -9,16 +9,17 @@
          .state('landing', {
              url: '/',
              controller: 'LandingCtrl as landing',
-             templateUrl: '/app/templates/landing.html'
+             templateUrl: '/templates/landing.html'
          })
          .state('album', {
              url: '/album',
-             templateUrl: '/app/templates/album.html'
+             controller: 'AlbumCtrl as album',
+             templateUrl: '/templates/album.html'
          })
          .state('collection',{
             url: '/collection',
             controller: 'CollectionCtrl as collection',
-            templateUrl: '/app/templates/collection.html'
+            templateUrl: '/templates/collection.html'
             
         });
      }
